@@ -38,7 +38,7 @@ unsigned int convert_sbase(buffer_t *output, long int num, char *base,
 	digit = base[(num < 0 ? -1 : 1) * (num % size)];
 	_memcpy(output, &digit, 1);
 	return (ret);}
-	/*
+	/**
 	 * convert_ubase - Converts an unsigned long to an inputted base and
 	 *                 stores the result to a buffer contained in a struct.
 	 * @output: A buffer_t struct containing a character array.
@@ -47,6 +47,7 @@ unsigned int convert_sbase(buffer_t *output, long int num, char *base,
 	 * @flags: Flag modifiers.
 	 * @wid: A width modifier.
 	 * @prec: A precision modifier.
+	 *
 	 * Return: The number of bytes stored to the buffer.
 	 */
 	unsigned int convert_ubase(buffer_t *output, unsigned long int num, char *base,
